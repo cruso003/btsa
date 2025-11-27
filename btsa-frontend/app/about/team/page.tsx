@@ -1,0 +1,230 @@
+import { Header } from "@/components/btsa/Header";
+import { Footer } from "@/components/btsa/Footer";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
+import { Linkedin, Mail, Quote } from "lucide-react";
+
+export default function TeamPage() {
+  const team = [
+    {
+      name: "Nakabaale Lewis Bisaso",
+      role: "Founder & Executive Director",
+      country: "Uganda 🇺🇬",
+      bio: "I've witnessed the devastating cycle of inadequate housing, poverty, and environmental degradation across African communities. BTSA is my commitment to breaking this cycle through sustainable solutions that empower people, not just provide aid. We're building a movement, not just homes.",
+      image: "/team-collaboration.png"
+    },
+    {
+      name: "Engr. Geitodyu Henrique Crusoe",
+      role: "Assistant Project Coordinator",
+      country: "Liberia 🇱🇷",
+      bio: "I've seen firsthand how lack of opportunity drives young people to despair. In Liberia, we call them Zokos - disadvantaged youth lost to drugs and hopelessness. But I see master builders, entrepreneurs, and community leaders waiting to emerge. With the right skills and support, they can transform not just their own lives, but rebuild our nation sustainably.",
+      image: "/hero-youth-training.png"
+    },
+    {
+      name: "Abdulhafiz Hassan Omar",
+      role: "Deputy Executive Director & Projects Manager",
+      country: "Uganda 🇺🇬",
+      bio: "Sustainable development requires strategic thinking and meticulous execution. I'm here to ensure every project BTSA undertakes delivers maximum impact with full accountability.",
+      image: null
+    },
+    {
+      name: "Matovu Timothy",
+      role: "Chief of Staff",
+      country: "Uganda 🇺🇬",
+      bio: "Behind every successful mission is a well-oiled organizational machine. I ensure BTSA operates efficiently so our teams can focus on changing lives.",
+      image: null
+    },
+    {
+      name: "Tigamalwayo Esther Yvonne",
+      role: "Secretary & Grants Coordinator",
+      country: "Uganda 🇺🇬",
+      bio: "Every project starts with funding, and every partnership begins with clear communication. I connect BTSA's mission with the resources needed to make it reality.",
+      image: null
+    },
+    {
+      name: "Nansasi Josephine",
+      role: "Assistant Secretary & Programs Coordinator",
+      country: "Uganda 🇺🇬",
+      bio: "Programs are where our mission meets reality. I ensure every initiative is well-coordinated, community-centered, and impactful.",
+      image: null
+    },
+    {
+      name: "Namanda Patience",
+      role: "Legal Advisor",
+      country: "Uganda 🇺🇬",
+      bio: "Legal protection isn't bureaucracy - it's the foundation that allows BTSA to operate fearlessly and make bold moves for African communities.",
+      image: null
+    },
+    {
+      name: "Kasirye Mahad",
+      role: "Assistant Legal Advisor",
+      country: "Uganda 🇺🇬",
+      bio: "Strong legal foundations enable bold action. I help ensure BTSA operates with integrity and protection across all African jurisdictions.",
+      image: null
+    },
+    {
+      name: "Akankwatsa John Patrick",
+      role: "Statistics Department Lead",
+      country: "Uganda 🇺🇬",
+      bio: "Numbers tell the story of our impact. I ensure BTSA's work is measured, understood, and continuously improved through rigorous data analysis.",
+      image: null
+    },
+    {
+      name: "Ssekamatte Arnold David",
+      role: "Training & Capacity Building Officer",
+      country: "Uganda 🇺🇬",
+      bio: "Knowledge is the most sustainable gift we can give. I design training that doesn't just teach skills - it transforms lives and builds self-reliant communities.",
+      image: null
+    },
+    {
+      name: "Hillary Abindabyamu",
+      role: "Sustainability & Climate Action Lead",
+      country: "Uganda 🇺🇬",
+      bio: "We can't build homes on a dying planet. Every BTSA project must heal the environment while sheltering communities - that's my mandate.",
+      image: null
+    },
+    {
+      name: "Nikuze Nzabandora Beatrice",
+      role: "Human Resource Manager & Tour Coordinator",
+      country: "Uganda 🇺🇬",
+      bio: "Our people are our greatest asset. I ensure BTSA attracts, develops, and retains passionate professionals who believe in our mission.",
+      image: null
+    },
+    {
+      name: "Diana Rose",
+      role: "Research & Innovation Officer",
+      country: "Uganda 🇺🇬",
+      bio: "Innovation keeps BTSA ahead. I explore cutting-edge solutions in sustainable construction so we always deliver the best to communities.",
+      image: null
+    },
+    {
+      name: "Nagawa Deborah Edith",
+      role: "Coordinator",
+      country: "Uganda 🇺🇬",
+      bio: "Coordination is the glue that holds ambitious projects together. I make sure all our moving parts work in harmony.",
+      image: null
+    },
+    {
+      name: "Akandwanaho Alvin Sam",
+      role: "ICT Officer",
+      country: "Uganda 🇺🇬",
+      bio: "Technology amplifies impact. I ensure BTSA has the digital infrastructure to operate efficiently and reach communities effectively.",
+      image: null
+    },
+    {
+      name: "Minawa Arnold Desire",
+      role: "IT Specialist",
+      country: "DR Congo 🇨🇩",
+      bio: "From DRC to Uganda to Liberia - technology connects our pan-African team. I build the digital bridges that make our collaboration seamless.",
+      image: null
+    }
+  ];
+
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      
+      <main className="flex-1">
+        {/* Hero */}
+        <section className="bg-earth-brown-900 py-20 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="mb-4 font-heading text-4xl font-bold md:text-6xl">
+              Meet the Team
+            </h1>
+            <p className="mx-auto max-w-2xl text-xl text-gray-200">
+              16 professionals from across Africa, working together as equals to build a sustainable future.
+            </p>
+          </div>
+        </section>
+
+        {/* Diversity Stats */}
+        <section className="bg-white py-12 border-b border-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="grid gap-6 md:grid-cols-4 text-center">
+              <div className="p-4 rounded-lg bg-forest-green-50">
+                <div className="text-3xl font-bold text-forest-green mb-1">16</div>
+                <div className="text-sm text-gray-600 font-medium">Team Members</div>
+              </div>
+              <div className="p-4 rounded-lg bg-sunset-orange-50">
+                <div className="text-3xl font-bold text-sunset-orange mb-1">50%</div>
+                <div className="text-sm text-gray-600 font-medium">Women (8)</div>
+              </div>
+              <div className="p-4 rounded-lg bg-sky-blue-50">
+                <div className="text-3xl font-bold text-sky-blue mb-1">50%</div>
+                <div className="text-sm text-gray-600 font-medium">Men (8)</div>
+              </div>
+              <div className="p-4 rounded-lg bg-earth-brown-50">
+                <div className="text-3xl font-bold text-earth-brown mb-1">3</div>
+                <div className="text-sm text-gray-600 font-medium">Countries Represented</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Unified Team Grid */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {team.map((member, index) => (
+                <div key={index} className="group flex flex-col rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all hover:border-earth-brown">
+                  <div className="relative h-64 bg-gray-100">
+                    {member.image ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gray-50 text-gray-400 font-medium">
+                        [Photo]
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="font-heading text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                    <div className="text-sm font-semibold text-earth-brown mb-2">{member.role}</div>
+                    <div className="text-xs font-medium text-gray-500 mb-4">{member.country}</div>
+                    
+                    <div className="relative flex-1">
+                      <Quote className="absolute -top-2 -left-2 h-4 w-4 text-gray-300 rotate-180" />
+                      <p className="text-sm text-gray-600 italic pl-4 relative z-10">
+                        "{member.bio}"
+                      </p>
+                    </div>
+                    
+                    {/* Social Links (Optional) */}
+                    <div className="flex gap-2 mt-auto pt-4 border-t border-gray-100">
+                      <button className="text-gray-400 hover:text-earth-brown transition-colors">
+                        <Linkedin className="h-4 w-4" />
+                      </button>
+                      <button className="text-gray-400 hover:text-earth-brown transition-colors">
+                        <Mail className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Join CTA */}
+        <section className="py-20 bg-forest-green-50 text-center">
+          <div className="container mx-auto px-4">
+            <h2 className="mb-4 font-heading text-3xl font-bold text-gray-900">Join Our Professional Network</h2>
+            <p className="mb-8 text-lg text-gray-600 max-w-2xl mx-auto">
+              We are always looking for passionate architects, engineers, and changemakers to join our flat, collaborative team.
+            </p>
+            <Button size="lg" className="bg-forest-green hover:bg-forest-green-700 text-white" asChild>
+              <Link href="/get-involved/volunteer">Apply to Join</Link>
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
