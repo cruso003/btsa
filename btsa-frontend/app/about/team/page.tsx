@@ -8,116 +8,172 @@ import { Linkedin, Mail, Quote } from "lucide-react";
 export default function TeamPage() {
   const team = [
     {
-      name: "Nakabaale Lewis Bisaso",
+      name: "Bisasa Lewis Nakabaale",
       role: "Founder & Executive Director",
       country: "Uganda 🇺🇬",
       bio: "I've witnessed the devastating cycle of inadequate housing, poverty, and environmental degradation across African communities. BTSA is my commitment to breaking this cycle through sustainable solutions that empower people, not just provide aid. We're building a movement, not just homes.",
-      image: "/team-collaboration.png"
+      image: "/team/bisasa-lewis-nakabaale.jpeg"
     },
     {
       name: "Engr. Geitodyu Henrique Crusoe",
       role: "Assistant Project Coordinator",
       country: "Liberia 🇱🇷",
       bio: "I've seen firsthand how lack of opportunity drives young people to despair. In Liberia, we call them Zokos - disadvantaged youth lost to drugs and hopelessness. But I see master builders, entrepreneurs, and community leaders waiting to emerge. With the right skills and support, they can transform not just their own lives, but rebuild our nation sustainably.",
-      image: "/hero-youth-training.png"
+      image: "/team/geitodyu-henrique-crusoe.jpg"
     },
     {
       name: "Abdulhafiz Hassan Omar",
       role: "Deputy Executive Director & Projects Manager",
       country: "Uganda 🇺🇬",
       bio: "Sustainable development requires strategic thinking and meticulous execution. I'm here to ensure every project BTSA undertakes delivers maximum impact with full accountability.",
-      image: null
+      image: "/team/abdulhafiz-hassan-omar.jpeg"
     },
     {
       name: "Matovu Timothy",
       role: "Chief of Staff",
       country: "Uganda 🇺🇬",
       bio: "Behind every successful mission is a well-oiled organizational machine. I ensure BTSA operates efficiently so our teams can focus on changing lives.",
-      image: null
+      image: "/team/matovu-timothy.jpeg"
     },
     {
-      name: "Tigamalwayo Esther Yvonne",
+      name: "Esther Tigamalwayo Yvonne",
       role: "Secretary & Grants Coordinator",
       country: "Uganda 🇺🇬",
       bio: "Every project starts with funding, and every partnership begins with clear communication. I connect BTSA's mission with the resources needed to make it reality.",
-      image: null
+      image: "/team/esther-Tigamalwayo-yvonne.jpeg"
     },
     {
       name: "Nansasi Josephine",
       role: "Assistant Secretary & Programs Coordinator",
       country: "Uganda 🇺🇬",
       bio: "Programs are where our mission meets reality. I ensure every initiative is well-coordinated, community-centered, and impactful.",
-      image: null
+      image: "/team/nansasi-josephine.jpeg"
     },
     {
       name: "Namanda Patience",
       role: "Legal Advisor",
       country: "Uganda 🇺🇬",
       bio: "Legal protection isn't bureaucracy - it's the foundation that allows BTSA to operate fearlessly and make bold moves for African communities.",
-      image: null
+      image: "/team/namanda-patience.jpeg"
     },
     {
       name: "Kasirye Mahad",
       role: "Assistant Legal Advisor",
       country: "Uganda 🇺🇬",
       bio: "Strong legal foundations enable bold action. I help ensure BTSA operates with integrity and protection across all African jurisdictions.",
-      image: null
+      image: "/team/kasirye-mahad.jpeg"
     },
     {
       name: "Akankwatsa John Patrick",
       role: "Statistics Department Lead",
       country: "Uganda 🇺🇬",
       bio: "Numbers tell the story of our impact. I ensure BTSA's work is measured, understood, and continuously improved through rigorous data analysis.",
-      image: null
+      image: "/team/akankwatsa-john-patrick.jpeg"
     },
     {
-      name: "Ssekamatte Arnold David",
-      role: "Training & Capacity Building Officer",
-      country: "Uganda 🇺🇬",
-      bio: "Knowledge is the most sustainable gift we can give. I design training that doesn't just teach skills - it transforms lives and builds self-reliant communities.",
-      image: null
-    },
-    {
-      name: "Hillary Abindabyamu",
+      name: "Hilary Abindabyamu",
       role: "Sustainability & Climate Action Lead",
       country: "Uganda 🇺🇬",
       bio: "We can't build homes on a dying planet. Every BTSA project must heal the environment while sheltering communities - that's my mandate.",
-      image: null
+      image: "/team/hilary-abindabyamu.jpeg"
     },
     {
       name: "Nikuze Nzabandora Beatrice",
       role: "Human Resource Manager & Tour Coordinator",
       country: "Uganda 🇺🇬",
       bio: "Our people are our greatest asset. I ensure BTSA attracts, develops, and retains passionate professionals who believe in our mission.",
-      image: null
+      image: "/team/nikuze-nzabandora-beatrice.jpeg"
     },
     {
       name: "Diana Rose",
       role: "Research & Innovation Officer",
       country: "Uganda 🇺🇬",
       bio: "Innovation keeps BTSA ahead. I explore cutting-edge solutions in sustainable construction so we always deliver the best to communities.",
-      image: null
+      image: "/team/diana-rose.jpeg"
     },
     {
       name: "Nagawa Deborah Edith",
       role: "Coordinator",
       country: "Uganda 🇺🇬",
       bio: "Coordination is the glue that holds ambitious projects together. I make sure all our moving parts work in harmony.",
-      image: null
+      image: "/team/nagawa-deborah-edith.jpeg"
     },
     {
-      name: "Akandwanaho Alvin Sam",
+      name: "Akandawanaho Alvin Sam",
       role: "ICT Officer",
       country: "Uganda 🇺🇬",
       bio: "Technology amplifies impact. I ensure BTSA has the digital infrastructure to operate efficiently and reach communities effectively.",
-      image: null
+      image: "/team/akandawanaho-alvin-sam.jpeg"
     },
     {
       name: "Minawa Arnold Desire",
       role: "IT Specialist",
       country: "DR Congo 🇨🇩",
-      bio: "From DRC to Uganda to Liberia - technology connects our pan-African team. I build the digital bridges that make our collaboration seamless.",
-      image: null
+      bio: "From DRC to Uganda to Liberia - technology connects our international team. I build the digital bridges that make our collaboration seamless.",
+      image: "/team/minawa-arnold-desire.jpeg"
+    },
+    {
+      name: "Abigail Epongseh Mba Ah Mbatu",
+      role: "Welfare Officer",
+      country: "Cameroon 🇨🇲",
+      bio: "Caring for our team's well-being is essential to our mission. I ensure every member feels supported, valued, and empowered to do their best work.",
+      image: "/team/abigail-epongseh-mba-ah-mbatu.jpeg"
+    },
+    {
+      name: "Anoh Precious Akwe",
+      role: "Assistant Welfare Officer",
+      country: "Cameroon 🇨🇲",
+      bio: "A healthy, happy team builds stronger communities. I work to create an environment where everyone can thrive personally and professionally.",
+      image: "/team/anoh-precious-akwe.jpeg"
+    },
+    {
+      name: "Awonge Precious Adaeze",
+      role: "Communications Officer",
+      country: "Nigeria 🇳🇬",
+      bio: "Effective communication amplifies our impact. I ensure BTSA's message reaches communities, partners, and supporters across Africa and beyond.",
+      image: "/team/awonge-precious-adaeze.jpeg"
+    },
+    {
+      name: "Diana Bosibori Nyakoe",
+      role: "Social Media Manager",
+      country: "Kenya 🇰🇪",
+      bio: "Social media is where movements are built. I connect BTSA's mission with audiences worldwide, inspiring action and engagement.",
+      image: "/team/diana-bosibori-nyakoe.jpeg"
+    },
+    {
+      name: "Dulandzev Melvis Berinyuy",
+      role: "Content Creator",
+      country: "Cameroon 🇨🇲",
+      bio: "Compelling content tells our story. I create narratives that showcase BTSA's impact and inspire others to join our mission.",
+      image: "/team/dulandzev-melvis-berinyuy.jpeg"
+    },
+    {
+      name: "Fred Muno Ochaka",
+      role: "Graphic Designer",
+      country: "Kenya 🇰🇪",
+      bio: "Design brings our vision to life. I create visual identities that communicate BTSA's values and capture the spirit of our work.",
+      image: "/team/fred-muno-ochaka.jpeg"
+    },
+    {
+      name: "Gloria Munyi",
+      role: "Videographer",
+      country: "Kenya 🇰🇪",
+      bio: "Video captures the human stories behind our work. I document BTSA's journey, showing the real impact we're making in communities.",
+      image: "/team/gloria-munyi.jpeg"
+    },
+    {
+      name: "Ngebenui Queency",
+      role: "Photographer",
+      country: "Cameroon 🇨🇲",
+      bio: "Photography freezes moments of transformation. I capture the faces, places, and progress that define BTSA's mission.",
+      image: "/team/ngebenui-queency.jpeg"
+    },
+    {
+      name: "Samjeh Lourdes",
+      role: "Event Coordinator",
+      country: "Cameroon 🇨🇲",
+      bio: "Events bring people together for a common cause. I create experiences that engage communities and build lasting partnerships for BTSA.",
+      image: "/team/samjeh-lourdes.jpeg"
     }
   ];
 
@@ -133,7 +189,7 @@ export default function TeamPage() {
               Meet the Team
             </h1>
             <p className="mx-auto max-w-2xl text-xl text-gray-200">
-              16 professionals from across Africa, working together as equals to build a sustainable future.
+              24 professionals from across Africa, working together as equals to build a sustainable future.
             </p>
           </div>
         </section>
@@ -143,19 +199,19 @@ export default function TeamPage() {
           <div className="container mx-auto px-4">
             <div className="grid gap-6 md:grid-cols-4 text-center">
               <div className="p-4 rounded-lg bg-forest-green-50">
-                <div className="text-3xl font-bold text-forest-green mb-1">16</div>
+                <div className="text-3xl font-bold text-forest-green mb-1">24</div>
                 <div className="text-sm text-gray-600 font-medium">Team Members</div>
               </div>
               <div className="p-4 rounded-lg bg-sunset-orange-50">
-                <div className="text-3xl font-bold text-sunset-orange mb-1">50%</div>
-                <div className="text-sm text-gray-600 font-medium">Women (8)</div>
+                <div className="text-3xl font-bold text-sunset-orange mb-1">62.5%</div>
+                <div className="text-sm text-gray-600 font-medium">Women (15)</div>
               </div>
               <div className="p-4 rounded-lg bg-sky-blue-50">
-                <div className="text-3xl font-bold text-sky-blue mb-1">50%</div>
-                <div className="text-sm text-gray-600 font-medium">Men (8)</div>
+                <div className="text-3xl font-bold text-sky-blue mb-1">37.5%</div>
+                <div className="text-sm text-gray-600 font-medium">Men (9)</div>
               </div>
               <div className="p-4 rounded-lg bg-earth-brown-50">
-                <div className="text-3xl font-bold text-earth-brown mb-1">3</div>
+                <div className="text-3xl font-bold text-earth-brown mb-1">6</div>
                 <div className="text-sm text-gray-600 font-medium">Countries Represented</div>
               </div>
             </div>

@@ -39,13 +39,13 @@ export function ThreePillarsSection() {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-earth-brown-950 text-white">
+    <section id="about" className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="mb-4 font-heading text-3xl font-bold md:text-5xl">
+          <h2 className="mb-4 font-heading text-3xl font-bold md:text-5xl text-gray-900">
             Our Three-Pillar Approach
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-white/80">
+          <p className="mx-auto max-w-2xl text-lg text-gray-600">
             Integrated solutions for sustainable community transformation across Africa
           </p>
         </div>
@@ -56,7 +56,7 @@ export function ThreePillarsSection() {
             return (
               <div
                 key={pillar.title}
-                className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all hover:bg-white/10"
+                className="group relative overflow-hidden rounded-xl bg-earth-brown-900 backdrop-blur-sm border border-earth-brown-700 transition-all hover:bg-earth-brown-800 hover:border-sunset-orange hover:shadow-2xl"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -74,15 +74,15 @@ export function ThreePillarsSection() {
                   <div className="mb-4">
                     <Icon className="h-10 w-10 text-sunset-orange" />
                   </div>
-                  <h3 className="mb-2 font-heading text-2xl font-bold">
+                  <h3 className="mb-2 font-heading text-2xl font-bold text-white">
                     {pillar.title}
                   </h3>
-                  <p className="mb-4 text-sm text-white/70">
+                  <p className="mb-4 text-sm text-gray-300">
                     {pillar.subtitle}
                   </p>
                   <ul className="space-y-2">
                     {pillar.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-sm text-white/80">
+                      <li key={feature} className="flex items-start gap-2 text-sm text-gray-200">
                         <span className="text-forest-green-400 font-bold">✓</span>
                         <span>{feature}</span>
                       </li>

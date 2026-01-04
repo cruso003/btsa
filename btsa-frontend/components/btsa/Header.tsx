@@ -56,7 +56,7 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-2" : "bg-gray-900/30 backdrop-blur-sm py-4"
       )}
     >
       <div className="container mx-auto px-4">
@@ -69,8 +69,8 @@ export function Header() {
                <Image src="/logo.png" alt="BTSA Logo" fill className="object-cover" />
             </div>
             <span className={cn(
-              "font-heading text-xl font-bold tracking-tight",
-              isScrolled ? "text-gray-900" : "text-white"
+              "font-heading text-xl font-bold tracking-tight transition-all",
+              isScrolled ? "text-gray-900" : "text-white drop-shadow-lg"
             )}>
               BTSA
             </span>
@@ -89,7 +89,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     "flex items-center gap-1 text-sm font-semibold transition-colors hover:text-earth-brown",
-                    isScrolled ? "text-gray-700" : "text-white"
+                    isScrolled ? "text-gray-700" : "text-white drop-shadow-lg"
                   )}
                 >
                   {item.label}

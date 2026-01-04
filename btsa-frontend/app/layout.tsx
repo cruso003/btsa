@@ -26,11 +26,11 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   title: {
-    default: "Build To Shelter Africa | Empowering Communities, Building Homes, Protecting the Planet",
+    default: "Build To Shelter Africa | Building Homes, Empowering Communities, Protecting the Planet",
     template: "%s | Build To Shelter Africa",
   },
   description:
-    "Build To Shelter Africa (BTSA) is a pan-African NGO uniting professionals across the continent to address housing poverty, youth empowerment, and environmental sustainability through sustainable construction and skills training.",
+    "Build To Shelter Africa (BTSA) is an SDG-aligned NGO uniting professionals across the continent to address housing poverty, youth empowerment, and environmental sustainability through sustainable construction and skills training.",
   keywords: [
     "Build To Shelter Africa",
     "BTSA",
@@ -42,7 +42,8 @@ export const metadata: Metadata = {
     "African NGO",
     "environmental sustainability",
     "SDG goals",
-    "pan-African development",
+    "sustainable development",
+    "SDG-aligned NGO",
   ],
   authors: [{ name: "Build To Shelter Africa" }],
   creator: "Build To Shelter Africa",
@@ -53,9 +54,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://buildtoshelterafrica.org",
     siteName: "Build To Shelter Africa",
-    title: "Build To Shelter Africa | Empowering Communities, Building Homes, Protecting the Planet",
+    title: "Build To Shelter Africa | Building Homes, Empowering Communities, Protecting the Planet",
     description:
-      "Pan-African NGO addressing housing poverty, youth empowerment, and environmental sustainability through sustainable construction and skills training.",
+      "SDG-aligned NGO addressing housing poverty, youth empowerment, and environmental sustainability through sustainable construction and skills training.",
     images: [
       {
         url: "/og-image.jpg",
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Build To Shelter Africa",
     description:
-      "Empowering Communities, Building Homes, Protecting the Planet across Africa",
+      "Building Homes, Empowering Communities, Protecting the Planet across Africa",
     images: ["/og-image.jpg"],
   },
   robots: {

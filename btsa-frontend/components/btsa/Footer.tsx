@@ -12,7 +12,7 @@ export function Footer() {
               <span className="font-heading text-2xl font-bold text-white">BTSA</span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Empowering Communities, Building Homes, Protecting the Planet.
+              Building Homes, Empowering Communities, Protecting the Planet.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="hover:text-white transition-colors">

@@ -27,15 +27,15 @@ export function HeroSection() {
             <FadeIn delay={0.2}>
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md px-4 py-2 border border-white/20 shadow-lg">
                 <CheckCircle2 className="h-4 w-4 text-forest-green-400" />
-                <span className="text-sm font-bold text-white tracking-wide">Pan-African NGO • 16 Professionals • Est. 2025</span>
+                <span className="text-sm font-bold text-white tracking-wide">SDG-Aligned NGO • Est. 2025</span>
               </div>
             </FadeIn>
 
             {/* Headline */}
             <FadeIn delay={0.4} className="space-y-6">
-              <h1 className="font-heading text-5xl font-extrabold leading-tight text-white lg:text-7xl drop-shadow-xl">
-                Empowering Communities, <br />
+              <h1 className="font-heading text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-7xl drop-shadow-xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-sunset-orange to-yellow-400">Building Homes</span>, <br />
+                Empowering Communities, <br />
                 Protecting the Planet
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed max-w-xl drop-shadow-md">
@@ -47,12 +47,12 @@ export function HeroSection() {
             <FadeIn delay={0.6}>
               <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10">
                 <div>
-                  <div className="font-heading text-4xl font-bold text-white">16</div>
-                  <div className="text-sm font-medium text-gray-300">Pan-African Professionals</div>
+                  <div className="font-heading text-4xl font-bold text-white">24</div>
+                  <div className="text-sm font-medium text-gray-300">Professionals</div>
                 </div>
                 <div>
-                  <div className="font-heading text-4xl font-bold text-forest-green-400">3</div>
-                  <div className="text-sm font-medium text-gray-300">Countries (Expanding)</div>
+                  <div className="font-heading text-4xl font-bold text-forest-green-400">6</div>
+                  <div className="text-sm font-medium text-gray-300">Countries</div>
                 </div>
                 <div>
                   <div className="font-heading text-4xl font-bold text-sky-blue-400">2</div>

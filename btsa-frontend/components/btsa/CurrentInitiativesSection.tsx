@@ -11,7 +11,7 @@ export function CurrentInitiativesSection() {
       status: "active",
       statusLabel: "Active - First Project",
       title: "Plastic-to-Pavement Bricks Initiative",
-      location: "Pan-African",
+      location: "Africa-wide",
       description: "Converting plastic waste into durable, eco-friendly pavement bricks—addressing environmental pollution while creating affordable building materials and jobs.",
       image: "/sustainable-home.png",
       sdgs: ["SDG 11", "SDG 12", "SDG 13"],

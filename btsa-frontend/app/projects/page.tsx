@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       id: "plastic-to-bricks",
       title: "Plastic-to-Pavement Bricks",
       status: "Active - First Project",
-      location: "Pan-African",
+      location: "Africa-wide",
       description: "Converting plastic waste into durable, eco-friendly pavement bricks. This initiative tackles environmental pollution while creating affordable building materials for our other construction projects.",
       image: "/sustainable-home.png",
       href: "/projects/plastic-to-pavement-bricks",

@@ -14,7 +14,7 @@ export function GetInvolvedSection() {
     {
       icon: Users,
       title: "Volunteer",
-      description: "Join our pan-African team of professionals",
+      description: "Join our international team of professionals",
       href: "/get-involved/volunteer",
       color: "forest-green"
     },

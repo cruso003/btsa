@@ -7,8 +7,8 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 
 const stats = [
   {
-    label: "Pan-African Professionals",
-    value: 16,
+    label: "Professionals",
+    value: 24,
     suffix: "+",
     icon: Users,
     color: "text-earth-brown",
@@ -17,7 +17,7 @@ const stats = [
   },
   {
     label: "Countries Represented",
-    value: 3,
+    value: 6,
     suffix: "",
     icon: Globe2,
     color: "text-forest-green",
