@@ -8,6 +8,7 @@ import { ThreePillarsSection } from "@/components/btsa/ThreePillarsSection";
 import { HowWeWorkSection } from "@/components/btsa/HowWeWorkSection";
 import { CurrentInitiativesSection } from "@/components/btsa/CurrentInitiativesSection";
 import { TeamPreviewSection } from "@/components/btsa/TeamPreviewSection";
+import { GalleryPreviewSection } from "@/components/btsa/GalleryPreviewSection";
 import { GetInvolvedSection } from "@/components/btsa/GetInvolvedSection";
 
 export default function HomePage() {
@@ -24,6 +25,7 @@ export default function HomePage() {
         <HowWeWorkSection />
         <CurrentInitiativesSection />
         <TeamPreviewSection />
+        <GalleryPreviewSection />
         <GetInvolvedSection />
       </main>
 

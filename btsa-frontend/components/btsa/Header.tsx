@@ -27,6 +27,7 @@ export function Header() {
       dropdown: [
         { label: "Our Story", href: "/about/our-story" },
         { label: "Our Team", href: "/about/team" },
+        { label: "Gallery", href: "/about/gallery" },
         { label: "Impact & Roadmap", href: "/about/impact" },
         { label: "SDG Alignment", href: "/about/sdg-alignment" },
       ]
