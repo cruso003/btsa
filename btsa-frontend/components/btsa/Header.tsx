@@ -30,16 +30,19 @@ export function Header() {
         { label: "Gallery", href: "/about/gallery" },
         { label: "Impact & Roadmap", href: "/about/impact" },
         { label: "SDG Alignment", href: "/about/sdg-alignment" },
-      ]
+      ],
     },
     {
       label: "Projects",
       href: "/projects",
       dropdown: [
         { label: "All Initiatives", href: "/projects" },
-        { label: "Plastic-to-Bricks", href: "/projects/plastic-to-pavement-bricks" },
+        {
+          label: "Plastic-to-Bricks",
+          href: "/projects/plastic-to-pavement-bricks",
+        },
         { label: "Liberia Youth", href: "/projects/liberia-youth-empowerment" },
-      ]
+      ],
     },
     {
       label: "Get Involved",
@@ -48,8 +51,9 @@ export function Header() {
         { label: "Volunteer", href: "/get-involved/volunteer" },
         { label: "Partner", href: "/get-involved/partner" },
         { label: "Donate", href: "/get-involved/donate" },
-      ]
+      ],
     },
+    { label: "Scholarship", href: "/scholarship" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -57,7 +61,9 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-2" : "bg-gray-900/30 backdrop-blur-sm py-4"
+        isScrolled
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-2"
+          : "bg-gray-900/30 backdrop-blur-sm py-4",
       )}
     >
       <div className="container mx-auto px-4">
@@ -65,14 +71,23 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white shadow-sm">
-               {/* Fallback if logo.png is missing */}
-               <div className="absolute inset-0 bg-earth-brown flex items-center justify-center text-white font-bold text-xs">BTSA</div>
-               <Image src="/logo.png" alt="BTSA Logo" fill className="object-cover" />
+              {/* Fallback if logo.png is missing */}
+              <div className="absolute inset-0 bg-earth-brown flex items-center justify-center text-white font-bold text-xs">
+                BTSA
+              </div>
+              <Image
+                src="/logo.png"
+                alt="BTSA Logo"
+                fill
+                className="object-cover"
+              />
             </div>
-            <span className={cn(
-              "font-heading text-xl font-bold tracking-tight transition-all",
-              isScrolled ? "text-gray-900" : "text-white drop-shadow-lg"
-            )}>
+            <span
+              className={cn(
+                "font-heading text-xl font-bold tracking-tight transition-all",
+                isScrolled ? "text-gray-900" : "text-white drop-shadow-lg",
+              )}
+            >
               BTSA
             </span>
           </Link>
@@ -80,8 +95,8 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <div 
-                key={item.label} 
+              <div
+                key={item.label}
                 className="relative group"
                 onMouseEnter={() => setActiveDropdown(item.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
@@ -90,7 +105,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     "flex items-center gap-1 text-sm font-semibold transition-colors hover:text-earth-brown",
-                    isScrolled ? "text-gray-700" : "text-white drop-shadow-lg"
+                    isScrolled ? "text-gray-700" : "text-white drop-shadow-lg",
                   )}
                 >
                   {item.label}
@@ -119,7 +134,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button 
+            <Button
               className="bg-sunset-orange hover:bg-sunset-orange-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
               asChild
             >
@@ -134,11 +149,15 @@ export function Header() {
           <button
             className={cn(
               "lg:hidden p-2",
-              isScrolled ? "text-gray-900" : "text-white"
+              isScrolled ? "text-gray-900" : "text-white",
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -151,7 +170,9 @@ export function Header() {
               <div key={item.label}>
                 {item.dropdown ? (
                   <div className="space-y-2">
-                    <div className="font-semibold text-gray-900 px-2">{item.label}</div>
+                    <div className="font-semibold text-gray-900 px-2">
+                      {item.label}
+                    </div>
                     <div className="pl-4 space-y-2 border-l-2 border-gray-100 ml-2">
                       {item.dropdown.map((subItem) => (
                         <Link
