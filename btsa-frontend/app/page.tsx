@@ -16,9 +16,8 @@ export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <EventBanner />
-
-      <main className="flex-1 pt-32">
+      <main className="flex-1 pt-24">
+        <EventBanner />
         <HeroSection />
         <ScholarshipPreviewSection />
         <ImpactCounters />
