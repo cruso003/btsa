@@ -1,100 +1,55 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  /* BTSA Brand Colors - Strict Semantic System */
+/* BTSA Brand Theme Colors */
+:root {
   /* Primary: Earth Brown (Stability, Foundation) */
-  --color-earth-brown-50: #F5E6D3;
-  --color-earth-brown-100: #EDD6BC;
-  --color-earth-brown-200: #DDB68E;
-  --color-earth-brown-300: #CD9660;
-  --color-earth-brown-400: #BD7632;
-  --color-earth-brown-500: #8B4513; /* MAIN PRIMARY */
-  --color-earth-brown-600: #6F370F;
-  --color-earth-brown-700: #53290B;
-  --color-earth-brown-800: #371B07;
-  --color-earth-brown-900: #1B0D04;
-  --color-earth-brown: #8B4513;
+  --earth-brown-50: #F5E6D3;
+  --earth-brown-100: #EDD6BC;
+  --earth-brown-200: #DDB68E;
+  --earth-brown-300: #CD9660;
+  --earth-brown-400: #BD7632;
+  --earth-brown-500: #8B4513;
+  --earth-brown-600: #6F370F;
+  --earth-brown-700: #53290B;
+  --earth-brown-800: #371B07;
+  --earth-brown-900: #1B0D04;
   
   /* Secondary: Forest Green (Growth, Nature) */
-  --color-forest-green-50: #D4F4D4;
-  --color-forest-green-100: #BFEEBF;
-  --color-forest-green-200: #94E394;
-  --color-forest-green-300: #69D869;
-  --color-forest-green-400: #3ECD3E;
-  --color-forest-green-500: #228B22; /* MAIN SECONDARY */
-  --color-forest-green-600: #1B6E1B;
-  --color-forest-green-700: #145214;
-  --color-forest-green-800: #0D350D;
-  --color-forest-green-900: #061906;
-  --color-forest-green: #228B22;
+  --forest-green-50: #D4F4D4;
+  --forest-green-100: #BFEEBF;
+  --forest-green-200: #94E394;
+  --forest-green-300: #69D869;
+  --forest-green-400: #3ECD3E;
+  --forest-green-500: #228B22;
+  --forest-green-600: #1B6E1B;
+  --forest-green-700: #145214;
+  --forest-green-800: #0D350D;
+  --forest-green-900: #061906;
   
   /* Accent: Sunset Orange (Action, Urgency) */
-  --color-sunset-orange-50: #FFE8E0;
-  --color-sunset-orange-100: #FFD9CC;
-  --color-sunset-orange-200: #FFBAA3;
-  --color-sunset-orange-300: #FF9B7A;
-  --color-sunset-orange-400: #FF7C51;
-  --color-sunset-orange-500: #FF6B35; /* MAIN ACCENT */
-  --color-sunset-orange-600: #FF4500;
-  --color-sunset-orange-700: #CC3700;
-  --color-sunset-orange-800: #992900;
-  --color-sunset-orange-900: #661B00;
-  --color-sunset-orange: #FF6B35;
+  --sunset-orange-50: #FFE8E0;
+  --sunset-orange-100: #FFD9CC;
+  --sunset-orange-200: #FFBAA3;
+  --sunset-orange-300: #FF9B7A;
+  --sunset-orange-400: #FF7C51;
+  --sunset-orange-500: #FF6B35;
+  --sunset-orange-600: #FF4500;
+  --sunset-orange-700: #CC3700;
+  --sunset-orange-800: #992900;
+  --sunset-orange-900: #661B00;
   
   /* Support: Sky Blue (Water, Hope) */
-  --color-sky-blue-50: #EBF4FD;
-  --color-sky-blue-100: #D7E9FB;
-  --color-sky-blue-200: #AFD3F7;
-  --color-sky-blue-300: #87BDF3;
-  --color-sky-blue-400: #5FA7EF;
-  --color-sky-blue-500: #4A90E2;
-  --color-sky-blue-600: #2573D0;
-  --color-sky-blue-700: #1C589E;
-  --color-sky-blue-800: #133D6C;
-  --color-sky-blue-900: #0A223A;
-  --color-sky-blue: #4A90E2;
-
-  /* shadcn/ui colors */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --sky-blue-50: #EBF4FD;
+  --sky-blue-100: #D7E9FB;
+  --sky-blue-200: #AFD3F7;
+  --sky-blue-300: #87BDF3;
+  --sky-blue-400: #5FA7EF;
+  --sky-blue-500: #4A90E2;
+  --sky-blue-600: #2573D0;
+  --sky-blue-700: #1C589E;
+  --sky-blue-800: #133D6C;
+  --sky-blue-900: #0A223A;
 }
 
 :root {
@@ -181,10 +136,12 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
+    outline-color: var(--ring);
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
   }
 }
 
@@ -205,6 +162,7 @@
 
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }

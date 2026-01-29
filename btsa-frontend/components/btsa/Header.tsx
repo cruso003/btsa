@@ -42,6 +42,7 @@ export function Header() {
           href: "/projects/plastic-to-pavement-bricks",
         },
         { label: "Liberia Youth", href: "/projects/liberia-youth-empowerment" },
+        { label: "Clean Energy Biogas", href: "/projects/clean-energy-biogas" },
       ],
     },
     {

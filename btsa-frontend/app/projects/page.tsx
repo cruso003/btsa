@@ -36,6 +36,16 @@ export default function ProjectsPage() {
       image: "/tree-planting.png", // Placeholder
       href: "#",
       color: "sky-blue"
+    },
+    {
+      id: "clean-energy-biogas",
+      title: "Clean Energy Through Biogas",
+      status: "Planned",
+      location: "Wakiso, Mukono, Gulu, Mbarara, Omoro",
+      description: "Community-led installation of household and institutional biogas systems that transform organic waste into clean cooking gas and organic fertilizer.",
+      image: "/projects/biogas/hero.jpg",
+      href: "/projects/clean-energy-biogas",
+      color: "forest-green"
     }
   ];
 
